@@ -10,7 +10,6 @@ $binary_e = ".\platform-tools\adb.exe"
 $backup_d = ".\backup\"
 $backup_f = $true
 $remove_f = $true
-$bystep_f = $false
 
 ##########################
 # ADVANCED CONFIGURATION #
