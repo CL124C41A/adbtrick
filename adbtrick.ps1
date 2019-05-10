@@ -15,7 +15,7 @@ $remove_f = $true
 # ADVANCED CONFIGURATION #
 ##########################
 # A complete reference of all the software present by default can be found
-# in the companion file: WAS-LX1A_SW.txt
+# in the companion file: /data/WAS-LX1A_SW.txt
 
 $selection = @(
 
