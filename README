@@ -1,0 +1,22 @@
+The script has been tested only on my smartphone: WAS-LX1A 8.0.0.383(C432)
+and the package listed are specific to that, don't expect it to work
+reliably on any other thing.
+
+It is recommended to execute this script after a factory reset performed
+without internet access to prevent the application updates and ensure
+a clean removal (remove the sim and don't enable the wi-fi).
+
+Configure the script and set the right path to adb; the defaults assume
+a platform-tools archive from google unpacked right next to the script.
+
+Make sure your Powershell has local script execution enabled.
+
+Make sure your smartphone has developer option enabled.
+
+Enable USB debug after plugging in the smartphone.
+
+Double-check all your settings and take a deep breath.
+
+Start the script and confirm the fingerprint on the smartphone.
+
+Now, it did either work or put your house on fire. Cheers.
