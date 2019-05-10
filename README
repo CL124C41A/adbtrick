@@ -7,7 +7,7 @@ without internet access to prevent the application updates and ensure
 a clean removal (remove the sim and don't enable the wi-fi).
 
 Configure the script and set the right path to adb; the defaults assume
-a platform-tools archive from google unpacked right next to the script.
+a platform-tools archive from Google unpacked right next to the script.
 
 Make sure your Powershell has local script execution enabled.
 
