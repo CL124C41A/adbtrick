@@ -1,4 +1,8 @@
-﻿=====================================================================================================================================================
+=========================================================================
+Package-application mappings are based on existing similar lists found on
+the internet and partly on wild guesses, something may be inaccurate.
+=========================================================================
+
 package:/cust/hw/eu/app/HiFolder/HiFolder.apk=com.huawei.hifolder
 package:/cust/hw/eu/app/HMS/HMS.apk=com.huawei.hwid
 package:/cust/hw/eu/app/HwCloudDrive_EU/HwCloudDrive_EU.apk=com.huawei.hidisk
@@ -7,7 +11,7 @@ package:/cust/hw/eu/app/HwPushService/HwPushService.apk=com.huawei.android.pusha
 package:/cust/hw/eu/app/HwTrustCircle/HwTrustCircle.apk=com.huawei.trustcircle
 package:/cust/hw/eu/app/OMACP/OMACP.apk=com.huawei.omacp
 package:/cust/hw/eu/app/PredefinedEapSim/PredefinedEapSim.apk=com.huawei.wifieapsimplmn
-=====================================================================================================================================================
+
 package:/data/hw_init/product/app/HwGameAssistant/HwGameAssistant.apk=com.huawei.gameassistant
 package:/data/hw_init/version/region_comm/oversea/app/HwHealthPlatform_OVE/HwHealthPlatform_OVE.apk=com.huawei.health
 package:/data/hw_init/version/region_comm/oversea/app/HwVAssistant/HwVAssistant.apk=com.huawei.vassistant
@@ -29,14 +33,14 @@ package:/data/hw_init/version/special_cust/WAS-L01A/hw/eu/app/Installer/Installe
 package:/data/hw_init/version/special_cust/WAS-L01A/hw/eu/app/PGA_ScratchCard/PGA_ScratchCard.apk=com.gameloft.android.GloftSCCA
 package:/data/hw_init/version/special_cust/WAS-L01A/hw/eu/app/SpiderManUltimatePower/SpiderManUltimatePower.apk=com.gameloft.android.GloftSMIF
 package:/data/hw_init/version/special_cust/WAS-L01A/hw/eu/app/Twitter/Twitter.apk=com.twitter.android
-=====================================================================================================================================================
+
 package:/product/app/HwFidoAsm/HwFidoAsm.apk=com.huawei.hwasm
 package:/product/app/HwFidoClient/HwFidoClient.apk=com.huawei.fido.uafclient
 package:/product/app/HwFMRadio/HwFMRadio.apk=com.huawei.android.FMRadio
 package:/product/app/HwSmartShot/HwSmartShot.apk=com.qeexo.smartshot
------------------------------------------------------------------------------------------------------------------------------------------------------
+
 package:/product/overlay/frameworkResOverlay.apk=com.android.frameworkres.overlay
-=====================================================================================================================================================
+
 package:/system/app/Bluetooth/Bluetooth.apk=com.android.bluetooth
 package:/system/app/BluetoothMidiService/BluetoothMidiService.apk=com.android.bluetoothmidiservice
 package:/system/app/BookmarkProvider/BookmarkProvider.apk=com.android.bookmarkprovider
@@ -109,7 +113,7 @@ package:/system/app/Videos/Videos.apk=com.google.android.videos
 package:/system/app/WatchSync/WatchSync.apk=com.huawei.watch.sync
 package:/system/app/WebViewGoogle/WebViewGoogle.apk=com.google.android.webview
 package:/system/app/YouTube/YouTube.apk=com.google.android.youtube
------------------------------------------------------------------------------------------------------------------------------------------------------
+
 package:/system/delapp/BasicDreams/BasicDreams.apk=com.android.dreams.basic
 package:/system/delapp/HwBackup_Local/HwBackup_Local.apk=com.huawei.KoBackup
 package:/system/delapp/HwCompass/HwCompass.apk=com.huawei.compass
@@ -117,13 +121,13 @@ package:/system/delapp/HwEmuiManual/HwEmuiManual.apk=com.huawei.android.tips
 package:/system/delapp/HwMirror/HwMirror.apk=com.android.hwmirror
 package:/system/delapp/PhoneClone_OVE/PhoneClone_OVE.apk=com.hicloud.android.clone
 package:/system/delapp/WallpaperBackup/WallpaperBackup.apk=com.android.wallpaperbackup
------------------------------------------------------------------------------------------------------------------------------------------------------
+
 package:/system/emui/base/overlay/frameworkhwextdark/frameworkhwextdark.apk=com.android.frameworkhwext.dark
 package:/system/emui/base/overlay/frameworkhwexthonor/frameworkhwexthonor.apk=com.android.frameworkhwext.honor
------------------------------------------------------------------------------------------------------------------------------------------------------
+
 package:/system/framework/framework-res.apk=android
 package:/system/framework/framework-res-hwext.apk=androidhwext
------------------------------------------------------------------------------------------------------------------------------------------------------
+
 package:/system/priv-app/BackupRestoreConfirmation/BackupRestoreConfirmation.apk=com.android.backupconfirm
 package:/system/priv-app/BlockedNumberProvider/BlockedNumberProvider.apk=com.android.providers.blockednumber
 package:/system/priv-app/Calendar/Calendar.apk=com.android.calendar
@@ -196,4 +200,3 @@ package:/system/priv-app/TeleService/TeleService.apk=com.android.phone
 package:/system/priv-app/Velvet/Velvet.apk=com.google.android.googlequicksearchbox
 package:/system/priv-app/VpnDialogs/VpnDialogs.apk=com.android.vpndialogs
 package:/system/priv-app/WallpaperCropper/WallpaperCropper.apk=com.android.wallpapercropper
-=====================================================================================================================================================
