@@ -15,6 +15,7 @@ Before running the script make sure that:
 
 Procedure:
  1 - Plug the smartphone to the computer
+ 2 - Enable USB 'file transfer' mode
  2 - Enable USB debug on the smartphone
  3 - Start the script
  4 - Confirm the fingerprint on the smartphone
