@@ -4,18 +4,15 @@
 .DESCRIPTION
     Ever wanted to remove some system apps from your smartphone?
 	
-	The web it's surely full of partial or overly specific guides;
-	with this script I'm trying to provide a simple way to perform
+	With this script I'm trying to provide a simple way to perform
 	this operation in the simplest and safest way possible:
+	* Packages are removed exclusively from the current user.
+	* The packages to be removed are pulled into a local folder.
+	* Most behaviour can be changed with parameter flags.
 	
-	* No root required
-	Packages are removed exclusively from the current user.
-	
-	* Backups by default
-	The packages to be removed are pulled into a local folder.
-	
-	* Configurable behaviour
-	Most of it can be changed with parameter flags.
+	This script don't aim to become a general solution that works for everyone.
+	It has been developed and tested on the Huawei P10 Lite; on other
+	smartphones it may either work or not, let me know if it does :D
 .PARAMETER fileSelect
     Mandatory. Used to select the packages to operate on.
 	Expects a file of packages with one package per line.
@@ -30,14 +27,14 @@
 	Used to enable the package backup before removal.
 .EXAMPLE
 	Backups the packages defined by games.txt into the
-	./backup folder and remove them from the device.
+	.\backup folder and remove them from the device.
 
-    adbtrick -fileSelect .\data\WAS-LX1A\games.txt
+    adbtrick -fileSelect data\WAS-LX1A\games.txt
 .EXAMPLE
-	Backups the packages defined by aaa.txt
-	file into the .\bbb\ folder and stops.
+	Backups the packages defined by .\aaa.txt
+	file into the .\bbb folder and stops.
 
-	adbtrick -fileSelect .\aaa.txt -pathBackup .\bbb\ -flagRemove $false
+	adbtrick -fileSelect aaa.txt -pathBackup bbb -flagRemove $false
 .NOTES
     Author: Claudio Venanzi
     Date:   May 18, 2019
@@ -60,7 +57,7 @@ if($flagBackup) {New-Item -ItemType Directory -Force -Path $pathBackup | Out-Nul
 ForEach($package in Get-Content $fileSelect | Where {$_ }) {
 	if($onDevice -contains $package) {
 	
-		Write-Host ("`r`nChecking "+$package);
+		Write-Host ("`r`nChecking "+$package)
 		
 		# removes the leading 'package:' from the package string and
 		# splits it into the relative 'file' and 'class' substrings
@@ -71,7 +68,7 @@ ForEach($package in Get-Content $fileSelect | Where {$_ }) {
 		if($flagBackup) {& adb pull $pkgFile $backup_d}		
 		if($flagRemove) {& adb shell ('pm uninstall -k --user 0 '+$pkgClass)}
 		
-	} else {Write-Host ("`r`nSkipping "+$package);}
+	} else {Write-Host ("`r`nSkipping "+$package)}
 }
 
 Write-Host "`r`nDone.`r`n"
