@@ -1,0 +1,6 @@
+package:/data/hw_init/version/special_cust/WAS-L01A/hw/eu/app/Instagram_Stub/Instagram_Stub.apk=com.instagram.android
+package:/data/hw_init/version/special_cust/WAS-L01A/hw/eu/app/Facebook_Services/Facebook_Services.apk=com.facebook.services
+package:/data/hw_init/version/special_cust/WAS-L01A/hw/eu/app/Facebook_Stub/Facebook_Stub.apk=com.facebook.katana
+package:/data/hw_init/version/special_cust/WAS-L01A/hw/eu/app/Appmanager/Appmanager.apk=com.facebook.appmanager
+package:/data/hw_init/version/special_cust/WAS-L01A/hw/eu/app/Installer/Installer.apk=com.facebook.system
+package:/data/hw_init/version/special_cust/WAS-L01A/hw/eu/app/Twitter/Twitter.apk=com.twitter.android

@@ -1,0 +1,4 @@
+package:/data/hw_init/version/special_cust/WAS-L01A/hw/eu/app/SpiderManUltimatePower/SpiderManUltimatePower.apk=com.gameloft.android.GloftSMIF
+package:/data/hw_init/version/special_cust/WAS-L01A/hw/eu/app/DisneyMagicKingdom/DisneyMagicKingdom.apk=com.gameloft.android.GloftDMKF
+package:/data/hw_init/version/special_cust/WAS-L01A/hw/eu/app/PGA_ScratchCard/PGA_ScratchCard.apk=com.gameloft.android.GloftSCCA
+package:/data/hw_init/version/special_cust/WAS-L01A/hw/eu/app/AsphaltNitro/AsphaltNitro.apk=com.gameloft.android.GloftANPH

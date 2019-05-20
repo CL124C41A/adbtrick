@@ -57,7 +57,7 @@ $onDevice = ((& adb shell 'pm list packages -f' | sort) -split " ")
 if($flagBackup) {New-Item -ItemType Directory -Force -Path $pathBackup | Out-Null
 
 # for each defined package that is also on the device
-ForEach($package in Get-Content $fileSelect) {
+ForEach($package in Get-Content $fileSelect | Where {$_ }) {
 	if($onDevice -contains $package) {
 	
 		Write-Host ("Checking "+$package);

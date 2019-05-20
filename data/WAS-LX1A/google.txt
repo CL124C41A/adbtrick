@@ -1,0 +1,10 @@
+package:/data/hw_init/version/special_cust/WAS-L01A/hw/eu/app/EditorsSheets/EditorsSheets.apk=com.google.android.apps.docs.editors.sheets
+package:/data/hw_init/version/special_cust/WAS-L01A/hw/eu/app/EditorsSlides/EditorsSlides.apk=com.google.android.apps.docs.editors.slides
+package:/data/hw_init/version/special_cust/WAS-L01A/hw/eu/app/EditorsDocs/EditorsDocs.apk=com.google.android.apps.docs.editors.docs
+
+package:/system/priv-app/Velvet/Velvet.apk=com.google.android.googlequicksearchbox
+
+package:/system/app/Photos/Photos.apk=com.google.android.apps.photos
+package:/system/app/Videos/Videos.apk=com.google.android.videos
+package:/system/app/Duo/Duo.apk=com.google.android.apps.tachyon
+package:/system/app/Music2/Music2.apk=com.google.android.music
