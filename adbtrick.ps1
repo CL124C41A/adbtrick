@@ -54,13 +54,13 @@ param
 $onDevice = ((& adb shell 'pm list packages -f' | sort) -split " ")
 
 # setup the backup directory
-if($flagBackup) {New-Item -ItemType Directory -Force -Path $pathBackup | Out-Null
+if($flagBackup) {New-Item -ItemType Directory -Force -Path $pathBackup | Out-Null}
 
 # for each defined package that is also on the device
 ForEach($package in Get-Content $fileSelect | Where {$_ }) {
 	if($onDevice -contains $package) {
 	
-		Write-Host ("Checking "+$package);
+		Write-Host ("`r`nChecking "+$package);
 		
 		# removes the leading 'package:' from the package string and
 		# splits it into the relative 'file' and 'class' substrings
@@ -71,7 +71,7 @@ ForEach($package in Get-Content $fileSelect | Where {$_ }) {
 		if($flagBackup) {& adb pull $pkgFile $backup_d}		
 		if($flagRemove) {& adb shell ('pm uninstall -k --user 0 '+$pkgClass)}
 		
-	} else {Write-Host ("Skipping "+$package);}
+	} else {Write-Host ("`r`nSkipping "+$package);}
 }
 
 Write-Host "`r`nDone.`r`n"
