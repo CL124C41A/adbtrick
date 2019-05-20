@@ -51,20 +51,26 @@ param
 )
 
 # retrieve installed packages from device
-$ondevice = ((& adb shell 'pm list packages -f' | sort) -split " ")
+$onDevice = ((& adb shell 'pm list packages -f' | sort) -split " ")
 
 # setup the backup directory
-#if($flagBackup) {New-Item -ItemType Directory -Force -Path $pathBackup | Out-Null
+if($flagBackup) {New-Item -ItemType Directory -Force -Path $pathBackup | Out-Null
 
+# for each defined package that is also on the device
 ForEach($package in Get-Content $fileSelect) {
-	if($ondevice -contains $package) {
+	if($onDevice -contains $package) {
 		Write-Host ("Checking "+$package);
-		$splitted = ($package.Replace("package:", "") -split ".apk=")
-		if($backup_f) {& adb pull ($splitted[0]+".apk") $backup_d}	
-		if($remove_f) {& adb shell ('pm uninstall -k --user 0 '+$splitted[1])}		
-	}else{
-		Write-Host ("Skipping "+$package);
-	}
+		
+		# removes the leading 'package:' from the package string and
+		# splits it into the relative 'file' and 'class' substrings
+		$pkgFile,$pkgClass = ($package.Replace("package:", "") -split ".apk=")
+		$pkgFile = $pkgBin + ".apk"
+
+		# perform the intended operations on the package
+		if($flagBackup) {& adb pull $pkgFile $backup_d}		
+		if($flagRemove) {& adb shell ('pm uninstall -k --user 0 '+$pkgClass)}
+		
+	} else {Write-Host ("Skipping "+$package);}
 }
 
 Write-Host "`r`nDone.`r`n"
