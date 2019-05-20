@@ -9,10 +9,7 @@
 	* Packages are removed exclusively from the current user.
 	* The packages to be removed are pulled into a local folder.
 	* Most behaviour can be changed with parameter flags.
-	
-	This script don't aim to become a general solution that works for everyone.
-	It has been developed and tested on the Huawei P10 Lite; on other
-	smartphones it may either work or not, let me know if it does :D
+
 .PARAMETER fileSelect
     Mandatory. Used to select the packages to operate on.
 	Expects a file of packages with one package per line.
