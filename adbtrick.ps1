@@ -59,12 +59,13 @@ if($flagBackup) {New-Item -ItemType Directory -Force -Path $pathBackup | Out-Nul
 # for each defined package that is also on the device
 ForEach($package in Get-Content $fileSelect) {
 	if($onDevice -contains $package) {
+	
 		Write-Host ("Checking "+$package);
 		
 		# removes the leading 'package:' from the package string and
 		# splits it into the relative 'file' and 'class' substrings
 		$pkgFile,$pkgClass = ($package.Replace("package:", "") -split ".apk=")
-		$pkgFile = $pkgBin + ".apk"
+		$pkgFile = $pkgFile + ".apk"
 
 		# perform the intended operations on the package
 		if($flagBackup) {& adb pull $pkgFile $backup_d}		
